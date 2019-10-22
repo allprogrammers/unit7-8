@@ -6,15 +6,19 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+1. (Required) WordPress <= 4.2 - Unauthenticated Stored Cross-Site Scripting (XSS) CVE-2015-3440
+  - [x] Summary: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.1
+  - [x] GIF Walkthrough: 
+<img src='xss.gif'>
+  - [x] Steps to recreate: 
+	Add a normal comment and wait for it to be approved. 
+	Once approved paste the payload in the reply to that comment. 
+	Wait for an admin to view that comment for the xss to do it's job 
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/4.2/src/wp-comments-post.php)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
