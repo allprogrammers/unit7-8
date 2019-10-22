@@ -15,9 +15,9 @@ Time spent: **X** hours spent in total
 	<img src='xss.gif'>
 
   - [x] Steps to recreate: 
-	-Add a normal comment and wait for it to be approved. 
-	-Once approved paste the payload in the reply to that comment. 
-	-Wait for an admin to view that comment for the xss to do it's job 
+	-Add a normal comment and wait for it to be approved. <br>
+	-Once approved paste the payload in the reply to that comment. <br>
+	-Wait for an admin to view that comment for the xss to do it's job. <br>
   - [x] Affected source code:
     - [Link](https://core.trac.wordpress.org/browser/tags/4.2/src/wp-comments-post.php)
 
