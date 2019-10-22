@@ -12,7 +12,8 @@ Time spent: **X** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
   - [x] GIF Walkthrough: 
-<img src='xss.gif'>
+	<img src='xss.gif'>
+
   - [x] Steps to recreate: 
 	-Add a normal comment and wait for it to be approved. 
 	-Once approved paste the payload in the reply to that comment. 
