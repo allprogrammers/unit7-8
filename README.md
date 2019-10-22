@@ -17,8 +17,9 @@ Time spent: **X** hours spent in total
 	Add a normal comment and wait for it to be approved. 
 	Once approved paste the payload in the reply to that comment. 
 	Wait for an admin to view that comment for the xss to do it's job 
-  - [ ] Affected source code:
+  - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.2/src/wp-comments-post.php)
+
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
