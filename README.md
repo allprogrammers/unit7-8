@@ -35,26 +35,29 @@ Time spent: **X** hours spent in total
 	-run the exploit as shown in the gif to replace the content of the post with your content 
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.7/src/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php)
-    - [Exploit Link] (https://www.exploit-db.com/exploits/41223)
+  - [Exploit Link] (https://www.exploit-db.com/exploits/41223)
 
-1. (Required) Vulnerability Name or ID
+1. (Required) WordPress 3.9-5.1 - Comment Cross-Site Scripting (XSS)
+  - [x] Summary: 
+    - Vulnerability types: CSRF + XSS + RCE
+    - Tested in version: 5.1
+    - Fixed in version: 5.1.1
+  - [x] GIF Walkthrough: 
+	<img src='csrf.gif'>
+  - [ ] Steps to recreate: 
+  - [x] Affected source code:
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/5.1/src/wp-includes/comment.php)
+
+1. (Optional) WordPress 3.9-5.1 - Comment Cross-Site Scripting (XSS)
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
+    - Vulnerability types: 
+    - Tested in version: 
     - Fixed in version: 
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
