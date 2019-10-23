@@ -6,7 +6,7 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) WordPress 4.2 - Unauthenticated Stored Cross-Site Scripting (XSS) CVE-2015-3440
+1. (Required) WordPress 4.2 - Unauthenticated Stored Cross-Site Scripting (XSS)
   - [x] Summary: 
     - Vulnerability types: XSS
     - Tested in version: 4.2
@@ -14,22 +14,29 @@ Time spent: **X** hours spent in total
   - [x] GIF Walkthrough: 
 	<img src='xss.gif'>
 
-  - [x] Steps to recreate: 
+  - [x] Steps to recreate: <br>
 	-Add a normal comment and wait for it to be approved. <br>
 	-Once approved paste the payload in the reply to that comment. <br>
 	-Wait for an admin to view that comment for the xss to do it's job. <br>
   - [x] Affected source code:
     - [Link](https://core.trac.wordpress.org/browser/tags/4.2/src/wp-comments-post.php)
 
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+2. (Required) WordPress 4.7.0-4.7.1 - Unauthenticated Page/Post Content Modification via REST API
+  - [x] Summary: 
+    - Vulnerability types: Privilege Escalation
+    - Tested in version: 4.7
+    - Fixed in version: 4.7.2
+  - [x] GIF Walkthrough: 
+	<img src='pe.gif'>
+  - [x] Steps to recreate:
+	-Locate a website running wordpress 4.7
+	-get and exploit from exploit db and run it against the website to see the posts
+	-make a file with the desired content in it
+	-run the exploit as shown in the gif to replace the content of the post with your content 
+  - [x] Affected source code:
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/4.7/src/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php)
+    - [Exploit Link] (https://www.exploit-db.com/exploits/41223)
+
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
