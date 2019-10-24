@@ -1,6 +1,6 @@
 # Project 7 - WordPress Pentesting
 
-Time spent: **X** hours spent in total
+Time spent: **36** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
@@ -35,7 +35,7 @@ Time spent: **X** hours spent in total
 	-run the exploit as shown in the gif to replace the content of the post with your content 
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.7/src/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php)
-  - [Exploit Link] (https://www.exploit-db.com/exploits/41223)
+  
 
 3. (Required) WordPress 3.9-5.1 - Comment Cross-Site Scripting (XSS)
   - [x] Summary: 
@@ -80,6 +80,8 @@ Time spent: **X** hours spent in total
 ## Assets
 
 List any additional assets, such as scripts or files
+- [Exploit Link for 2] (https://www.exploit-db.com/exploits/41223)
+- [Form for 3] (https://ironhackers.es/en/tutoriales/wordpress-5-1-csrf-xss-rce-poc/)
 
 ## Resources
 
@@ -89,6 +91,7 @@ List any additional assets, such as scripts or files
 - [Google](https://www.google.com/)
 - [Summer of Pwnage](https://sumofpwn.nl/)
 - [Sucuri](https://blog.sucuri.net/2017/02/content-injection-vulnerability-wordpress-rest-api.html)
+- [Hacker Target](https://hackertarget.com/wordpress-user-enumeration/)
 
 GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -96,12 +99,12 @@ GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while doing the work
 
-WPDistillery is was very slow so changing versions required a lot of time.
-Some of the vulnerabilities were mislabeled in the wpscan results like vulnerability 3
-it was difficult to decide what exploits to actually try and were good enough for the assignment.
-WPDistillery didn't work with versions less then 3.7 so for the last vulnerability 
-I had to first make my own webserver with mysql and php but it turned out wordpress 3 wouldn't run in php7 
-so I had to download xampp stack from 2011 and run wordpress on it.
+WPDistillery was very slow so changing versions required a lot of time.
+- Some of the vulnerabilities were mislabeled in the wpscan results like vulnerability 3
+- It was difficult to decide what exploits to actually try and were good enough for the assignment.
+- WPDistillery didn't work with versions less then 3.7 so for the last vulnerability 
+  I had to first make my own webserver with mysql and php but it turned out wordpress 3 wouldn't run in php7 
+  so I had to download xampp stack from 2011 and run wordpress on it.
 
 ## License
 
