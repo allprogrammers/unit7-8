@@ -108,7 +108,7 @@ WPDistillery was very slow so changing versions required a lot of time.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2019] [Muhammad Hamza Ali]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
