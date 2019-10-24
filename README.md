@@ -13,7 +13,7 @@ Time spent: **36** hours spent in total
     - Fixed in version: 4.2.1
   - [x] GIF Walkthrough: 
 
-	<img src='xss.gif'>
+	<img src='xss.gif' width='800px'>
 
   - [x] Steps to recreate: <br>
 	-Add a normal comment and wait for it to be approved. <br>
@@ -30,7 +30,7 @@ Time spent: **36** hours spent in total
 
   - [x] GIF Walkthrough: 
 
-	<img src='pe.gif'>
+	<img src='pe.gif' width='800px'>
 
   - [x] Steps to recreate:<br>
 	-Locate a website running wordpress 4.7<br>
@@ -50,7 +50,7 @@ Time spent: **36** hours spent in total
 
   - [x] GIF Walkthrough: 
 
-	<img src='csrf.gif'>
+	<img src='csrf.gif'width='800px'>
 
   - [x] Steps to recreate: <br>
 	-note the post id of the post you want to post the comment to<br>
@@ -66,7 +66,7 @@ Time spent: **36** hours spent in total
     - Fixed in version: not fixed
   - [x] GIF Walkthrough:
 
-	<img src="ue.gif"> 
+	<img src="ue.gif" width='800px'> 
 
   - [x] Steps to recreate: <br>
 	-in 4.0 just brute force author ids on the url http://host/?authod=ID where ID starts from 0 to as much as you want<br>
@@ -80,7 +80,7 @@ Time spent: **36** hours spent in total
     - Tested in version: 3.1.3
     - Fixed in version: 3.1.4
   - [x] GIF Walkthrough: 
-	<img src='sqli.gif'>
+	<img src='sqli.gif' width='800px'>
   - [x] Steps to recreate: 
 	-any user with editor level access can modify the parameters in http://localhost/wp/wp-admin/edit-tags.php?taxonomy=link_category&orderby='or sleep(5)&order='or sleep(5)
   - [x] Affected source code:
