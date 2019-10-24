@@ -12,6 +12,7 @@ Time spent: **36** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
   - [x] GIF Walkthrough: 
+
 	<img src='xss.gif'>
 
   - [x] Steps to recreate: <br>
@@ -26,13 +27,17 @@ Time spent: **36** hours spent in total
     - Vulnerability types: Privilege Escalation
     - Tested in version: 4.7
     - Fixed in version: 4.7.2
+
   - [x] GIF Walkthrough: 
+
 	<img src='pe.gif'>
-  - [x] Steps to recreate:
-	-Locate a website running wordpress 4.7
-	-get and exploit from exploit db and run it against the website to see the posts
-	-make a file with the desired content in it
-	-run the exploit as shown in the gif to replace the content of the post with your content 
+
+  - [x] Steps to recreate:<br>
+	-Locate a website running wordpress 4.7<br>
+	-get and exploit from exploit db and run it against the website to see the posts<br>
+	-make a file with the desired content in it<br>
+	-run the exploit as shown in the gif to replace the content of the post with your content<br>
+ 
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.7/src/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php)
   
@@ -42,12 +47,15 @@ Time spent: **36** hours spent in total
     - Vulnerability types: CSRF + XSS + RCE
     - Tested in version: 5.1
     - Fixed in version: 5.1.1
+
   - [x] GIF Walkthrough: 
+
 	<img src='csrf.gif'>
-  - [x] Steps to recreate: 
-	note the post id of the post you want to post the comment to
-	create an html form just like the one shown in the gif
-	send the link to the victim and wait for them to click on it
+
+  - [x] Steps to recreate: <br>
+	-note the post id of the post you want to post the comment to<br>
+	-create an html form just like the one shown in the gif<br>
+	-send the link to the victim and wait for them to click on it<br>
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/5.1/src/wp-includes/comment.php)
 
@@ -57,10 +65,12 @@ Time spent: **36** hours spent in total
     - Tested in version: 4.0 and 4.7
     - Fixed in version: not fixed
   - [x] GIF Walkthrough:
+
 	<img src="ue.gif"> 
-  - [x] Steps to recreate: 
-	in 4.0 just brute force author ids on the url http://host/?authod=ID where ID starts from 0 to as much as you want
-	in 4.7 go to http://host/wp-json/wp/v2/users
+
+  - [x] Steps to recreate: <br>
+	-in 4.0 just brute force author ids on the url http://host/?authod=ID where ID starts from 0 to as much as you want<br>
+	-in 4.7 go to http://host/wp-json/wp/v2/users
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.7/src/wp-json/wp/v2/users)
 
