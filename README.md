@@ -44,19 +44,25 @@ Time spent: **X** hours spent in total
     - Fixed in version: 5.1.1
   - [x] GIF Walkthrough: 
 	<img src='csrf.gif'>
-  - [ ] Steps to recreate: 
+  - [x] Steps to recreate: 
+	note the post id of the post you want to post the comment to
+	create an html form just like the one shown in the gif
+	send the link to the victim and wait for them to click on it
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/5.1/src/wp-includes/comment.php)
 
-1. (Optional) WordPress 3.9-5.1 - Comment Cross-Site Scripting (XSS)
-  - [ ] Summary: 
-    - Vulnerability types: 
-    - Tested in version: 
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+1. (Optional) Wordpress 4.0
+  - [x] Summary: 
+    - Vulnerability types: User Enumeration 
+    - Tested in version: 4.0 and 4.7
+    - Fixed in version: not fixed
+  - [x] GIF Walkthrough:
+	<img src="ue.gif"> 
+  - [x] Steps to recreate: 
+	in 4.0 just brute force author ids on the url http://host/?authod=ID where ID starts from 0 to as much as you want
+	in 4.7 go to http://host/wp-json/wp/v2/users
+  - [x] Affected source code:
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/4.7/src/wp-json/wp/v2/users)
 
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
