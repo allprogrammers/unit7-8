@@ -37,7 +37,7 @@ Time spent: **X** hours spent in total
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.7/src/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php)
   - [Exploit Link] (https://www.exploit-db.com/exploits/41223)
 
-1. (Required) WordPress 3.9-5.1 - Comment Cross-Site Scripting (XSS)
+3. (Required) WordPress 3.9-5.1 - Comment Cross-Site Scripting (XSS)
   - [x] Summary: 
     - Vulnerability types: CSRF + XSS + RCE
     - Tested in version: 5.1
@@ -51,7 +51,7 @@ Time spent: **X** hours spent in total
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/5.1/src/wp-includes/comment.php)
 
-1. (Optional) Wordpress 4.0
+4. (Optional) Wordpress 4.0 User Enumeration
   - [x] Summary: 
     - Vulnerability types: User Enumeration 
     - Tested in version: 4.0 and 4.7
@@ -64,15 +64,18 @@ Time spent: **X** hours spent in total
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.7/src/wp-json/wp/v2/users)
 
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
+5. (Optional) Wordpress 3.1.3 Blind SQLi
+  - [x] Summary: 
+    - Vulnerability types: Blind SQL injection
+    - Tested in version: 3.1.3
+    - Fixed in version: 3.1.4
+  - [x] GIF Walkthrough: 
+	<img src='sqli.gif'>
+  - [x] Steps to recreate: 
+	-any user with editor level access can modify the parameters in http://localhost/wp/wp-admin/edit-tags.php?taxonomy=link_category&orderby='or sleep(5)&order='or sleep(5)
+  - [x] Affected source code:
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/3.1.3/src/wp-includes/taxonomy.php) 
+    [Exploit Link] (https://www.exploit-db.com/exploits/17465)
 
 ## Assets
 
@@ -82,12 +85,23 @@ List any additional assets, such as scripts or files
 
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
+- [Exploit-DB](https://www.exploit-db.com/)
+- [Google](https://www.google.com/)
+- [Summer of Pwnage](https://sumofpwn.nl/)
+- [Sucuri](https://blog.sucuri.net/2017/02/content-injection-vulnerability-wordpress-rest-api.html)
 
 GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
 Describe any challenges encountered while doing the work
+
+WPDistillery is was very slow so changing versions required a lot of time.
+Some of the vulnerabilities were mislabeled in the wpscan results like vulnerability 3
+it was difficult to decide what exploits to actually try and were good enough for the assignment.
+WPDistillery didn't work with versions less then 3.7 so for the last vulnerability 
+I had to first make my own webserver with mysql and php but it turned out wordpress 3 wouldn't run in php7 
+so I had to download xampp stack from 2011 and run wordpress on it.
 
 ## License
 
