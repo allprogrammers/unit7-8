@@ -50,7 +50,7 @@ Time spent: **36** hours spent in total
 
   - [x] GIF Walkthrough: 
 
-	<img src='csrf.gif'width='800px'>
+	<img src='csrf.gif' width='800px'>
 
   - [x] Steps to recreate: <br>
 	-note the post id of the post you want to post the comment to<br>
